@@ -1,0 +1,40 @@
+11:43:38.734 -> start
+11:43:38.734 -> echo:Marlin1.0.05
+11:43:38.734 -> echo: Last Updated: Jun 27 2018 16:27:00 | Author: (geeetech, I3 config)
+11:43:38.734 -> Compiled: Jun 27 2018
+11:43:38.734 -> echo: Free Memory: 3902  PlannerBufferBytes: 1232
+11:43:38.734 -> echo:Stored settings retrieved
+11:43:40.081 -> Error:volume.init failed
+11:45:12.573 -> echo:Steps per unit:
+11:45:12.573 -> echo:  M92 X80.00 Y80.00 Z400.00 E100.00
+11:45:12.573 -> echo:Maximum feedrates (mm/s):
+11:45:12.573 -> echo:  M203 X400.00 Y400.00 Z2.00 E45.00
+11:45:12.573 -> echo:Maximum Acceleration (mm/s2):
+11:45:12.573 -> echo:  M201 X5000 Y5000 Z50 E5000
+11:45:12.573 -> echo:Acceleration: S=acceleration, T=retract acceleration
+11:45:12.573 -> echo:  M204 S1000.00 T2000.00
+11:45:12.573 -> echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+11:45:12.573 -> echo:  M205 S0.00 T0.00 B20000 X20.00 Z0.40 E5.00
+11:45:12.618 -> echo:Home offset (mm):
+11:45:12.618 -> echo:  M206 X0.00 Y0.00 Z0.00
+11:45:12.618 -> echo:PID settings:
+11:45:12.618 -> echo:   M301 P22.20 I1.08 D114.00
+11:45:12.618 -> ok
+
+
+G28 ;Home
+G1 Z15.0 F6000 ;Move the platform down 15mm
+G92 E0
+G1 F200 E3
+G92 E0
+
+
+M851 X6 Y-43 Z-1.4
+
+
+19:49:40.524 >       0      1      2
+19:49:40.525 >  0 -3.206 -1.846 -0.686
+19:49:40.527 >  1 -1.534 -0.431 +0.601
+19:49:40.527 >  2 +0.174 +1.106 +1.924
+
+
